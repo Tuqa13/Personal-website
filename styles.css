@@ -287,7 +287,7 @@ h3{
   }
   .intro h1{
     padding-left: 40px;
-    font-size: 100px;
+    font-size: 0px;
   }
   .intro .t{
     width: 80px;
@@ -321,14 +321,14 @@ h3{
   }
   .me{
     margin:auto 30px;
-    width: 80%;
-    font-size: 25px;
+    width: 60%;
+    font-size: 23px;
   }
   .photo{
     position: absolute;
     width: 190px;
     right: 50px;
-    top: 820px;
+    top: 1500px;
 
 
 
@@ -338,38 +338,40 @@ h3{
   }
   .sks{
     right: 90px;
-    top: 1600px;
-    font-size: 20px;
+    top: 1900px;
+    font-size: 16px;
   }
-  /* .map {
-    visibility: hidden;
-  } */
+  .map {
+    /* visibility: hidden; */
+    right: 100px;
+    top: 2300px;
+  }
   .box{
-    height: 30px;
+    height: 40px;
     margin: 0px auto -70px 30px;
   }
   #fname{
     position: relative;
-    width: 150px;
+    width: 200px;
     /* bottom: 10px; */
   }
   #femail{
-    width: 150px;
-    left: 170px;
+    width: 200px;
+    left: 210px;
     bottom: 50px;
   }
   #fsubject{
     position: relative;
-    width: 320px;
-    bottom: 60px;
+    width: 410px;
+    bottom: 70px;
   }
   #fmessage{
     position: relative;
-    width: 320px;
-    bottom: 70px;
+    width: 410px;
+    bottom: 80px;
     height: 100px;
   }
   .mg{
-    left: 98px;
+    left: 0px;
   }
 }
