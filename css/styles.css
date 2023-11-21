@@ -1,23 +1,29 @@
-body{
-background-color: #222222;
-margin: 0px;
-
+body {
+  background-color: #222222;
+  margin: 0;
 }
-.social{
+
+.social {
   margin-top: 20px;
 }
-.navbar{
+
+.navbar {
   position: fixed;
   width: 170px;
   text-align: center;
-
 }
-.navbar .name{
+
+.navbar .name {
   background-color: black;
-  margin: 0px;
-
+  margin: 0;
 }
-.name a{
+
+.name {
+  width: 170px;
+  display: inline-block;
+}
+
+.name a {
   text-decoration: none;
   position: relative;
   bottom: 15px;
@@ -27,108 +33,119 @@ margin: 0px;
   letter-spacing: -3.5px;
   font-size: 40px;
 }
-.name h2{
+
+.name h2 {
   color: #a5a5a5;
   font-size: 16px;
   font-weight: normal;
   position: relative;
   bottom: 20px;
 }
-.name .t{
+
+.name .t {
   position: relative;
   top: 15px;
   width: 50px;
   margin-top: 20px;
+}
 
+.navigation ul,
+.navigation li {
+  margin: 0;
+  padding: 0;
 }
-.name{
-  width: 170px;
-  display:inline-block;
-}
+
 .navigation ul {
-  margin: 0px;
-  padding:0px;
   width: 170px;
   font-family: 'Merriweather', serif;
   background-color: #1d1d1d;
 }
-.navigation li{
+
+.navigation li {
   border-bottom: 1px solid #373331;
 }
+
+.navigation li:last-child {
+  border-bottom: none;
+}
+
 .navigation li a {
   display: block;
   color: #909096;
   padding: 20px 16px;
   text-decoration: none;
 }
-.navigation li:last-child {
-  border-bottom: none;
-}
+
 .navigation li a:hover {
   color: #08fdd8;
 }
-.fab{
-  color:#909096;
+
+.fab,
+.fab:hover {
+  color: #909096;
   margin: 3px;
 }
+
 .fab:hover {
   color: #08fdd8;
 }
-.intro{
+
+.intro,
+.about,
+.skills,
+.contact {
   display: inline-block;
   margin-left: 170px;
   padding: 40px 70px;
 }
-p{
-  color: #515152;
-  font-family: 'Zeyada', cursive;
-  font-size: 30px;
-  margin: 0px;
 
-}
-.intro .p1{
-  line-height: 0.25;
-  margin-bottom: 30px;
-}
-.intro h1{
-  padding-left: 60px;
+.intro h1,
+.about h1 {
+  margin: 0;
   font-family: 'Kanit', sans-serif;
+}
+
+.intro h1 {
+  padding-left: 60px;
   letter-spacing: 1.5px;
   font-weight: bolder;
   font-size: 110px;
   line-height: 1;
   color: white;
-  margin-top: 0px;
   margin-bottom: 10px;
 }
-.intro h2{
+
+.intro h2,
+.about h2 {
   padding-left: 60px;
   font-family: 'Merriweather', serif;
   color: #909096;
   letter-spacing: 4px;
   font-size: 20px;
-  margin: 0px;
+  margin: 0;
   font-weight: lighter;
 }
-h1 span{
+
+h1 span {
   color: #515152;
   font-family: 'Zeyada', cursive;
   font-size: 30px;
   font-weight: lighter;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   line-height: 0.25;
-
 }
-.intro .t{
+
+.intro .t {
   width: 90px;
   position: relative;
   top: 10px;
   right: 5px;
 }
+
 .btn {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
-  border-radius: 0px;
+  border-radius: 0;
   font-family: 'Merriweather', serif;
   color: #08fdd8;
   font-size: 18px;
@@ -140,6 +157,7 @@ h1 span{
   margin-left: 60px;
   transition: background-color 2s;
 }
+
 .btn:hover {
   color: #222222;
   background: #08fdd8;
@@ -150,20 +168,15 @@ h1 span{
   background-image: linear-gradient(to bottom, #08fdd8, #08fdd8);
   text-decoration: none;
 }
-.about{
-  display: inline-block;
-  margin-left: 170px;
-  padding: 40px 70px;
-}
-h1{
-  margin: 0px;
-  color: #08fdd8;
-  font-family: 'Kanit', sans-serif;
+
+h1 {
   font-size: 80px;
+  color: #08fdd8;
 }
-.me{
+
+.me {
   font-family: 'Open Sans', sans-serif;
-  margin:auto 60px;
+  margin: auto 60px;
   color: white;
   width: 50%;
   font-size: 24px;
@@ -171,28 +184,25 @@ h1{
   font-weight: lighter;
   letter-spacing: -1.5px;
 }
-span a{
+
+span a {
   text-decoration: none;
   color: #08fdd8;
   transition: color 0.3s;
-
 }
-span a:hover{
+
+span a:hover {
   color: #1EAE98;
 }
-.photo{
+
+.photo {
   border-radius: 50%;
   position: absolute;
   right: 150px;
   top: 1020px;
+}
 
-}
-.skills{
-  display: inline-block;
-  margin-left: 170px;
-  padding: 40px 70px;
-}
-.sks{
+.sks {
   position: absolute;
   right: 200px;
   top: 1800px;
@@ -200,17 +210,21 @@ span a:hover{
   color: #707070;
   font-size: 15px;
 }
-h3{
+
+h3 {
   line-height: 2;
   letter-spacing: 3px;
 }
-.fa-star{
-  color:rgb(255, 34, 83);
+
+.fa-star {
+  color: rgb(255, 34, 83);
   transition: color 0.5s;
 }
-.fa-star:hover{
+
+.fa-star:hover {
   color: #08fdd8;
 }
+
 .map {
   position: absolute;
   right: 200px;
@@ -218,160 +232,161 @@ h3{
   height: 450px;
   width: 600;
 }
-.contact{
-  display: inline-block;
-  margin-left: 170px;
-  padding: 40px 70px;
-}
-.box{
+
+.box {
   background-color: #373331;
-  border: 0px;
+  border: 0;
   height: 50px;
-  margin: 0px auto -70px 60px;
+  margin: 0 auto -70px 60px;
   font-family: 'Open Sans', sans-serif;
   color: grey;
 }
-#fname{
+
+#fname,
+#femail {
   position: relative;
   width: 250px;
 }
-#femail{
-  position: relative;
-  width: 250px;
+
+#femail {
   left: 260px;
   bottom: 59px;
 }
-#fsubject{
+
+#fsubject,
+#fmessage {
   position: relative;
   width: 510px;
   bottom: 60px;
 }
-#fmessage{
-  position: relative;
-  width: 510px;
-  bottom: 60px;
-  height: 100px;
-}
-.mg{
+
+.mg {
   position: relative;
   left: 240px;
 }
-.soc{
+
+.soc {
   text-align: center;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   margin-top: 20px;
   letter-spacing: 30px;
 }
-.foot{
+
+.foot {
   letter-spacing: 5px;
   font-weight: bolder;
 }
-.fa-bars{
+
+.fa-bars {
   visibility: hidden;
 }
 
 @media (max-width: 1024px) {
-  .name{
-    visibility: hidden;}
-  .navigation ul {
+  .name,
+  .navigation ul,
+  .social p,
+  .intro {
     visibility: hidden;
   }
-  .social p{
-    visibility: hidden;
-  }
-  .intro{
-    margin-left: 0px;
-  }
-  p{
+
+  p {
     font-size: 30px;
   }
-  .intro h1{
-    padding-left: 40px;
-    font-size: 0px;
-  }
-  .intro .t{
-    width: 80px;
-    }
-  h1 span{
-      font-size: 30px;
-    }
-  .intro h2{
-        padding-left: 40px;
-        letter-spacing: 3px;
-        font-size: 25px;
-      }
-  .btn {
-   font-size: 20px;
-   padding: 10px 65px;
-   margin-left: 50px;
-      }
-  .about{
-      margin-left: 0px;
 
+  .intro h1 {
+    padding-left: 40px;
+    font-size: 0;
   }
-  .contact{
-      margin-left: 0px;
+
+  .intro .t {
+    width: 80px;
   }
-  .skills{
-    margin-left: 0px;
+
+  h1 span {
+    font-size: 30px;
   }
-  h1{
+
+  .intro h2 {
+    padding-left: 40px;
+    letter-spacing: 3px;
+    font-size: 25px;
+  }
+
+  .btn {
+    font-size: 20px;
+    padding: 10px 65px;
+    margin-left: 50px;
+  }
+
+  .about,
+  .contact,
+  .skills {
+    margin-left: 0;
+  }
+
+  h1 {
     font-size: 70px;
     width: 50%;
   }
-  .me{
-    margin:auto 30px;
+
+  .me {
+    margin: auto 30px;
     width: 60%;
     font-size: 23px;
   }
-  .photo{
+
+  .photo {
     position: absolute;
     width: 190px;
     right: 50px;
     top: 1500px;
-
-
-
   }
-  .skills .me{
+
+  .skills .me {
     width: 50%;
   }
-  .sks{
+
+  .sks {
     right: 90px;
     top: 1900px;
     font-size: 16px;
   }
+
   .map {
-    /* visibility: hidden; */
     right: 100px;
     top: 2300px;
   }
-  .box{
+
+  .box {
     height: 40px;
-    margin: 0px auto -70px 30px;
+    margin: 0 auto -70px 30px;
   }
-  #fname{
+
+  #fname {
     position: relative;
     width: 200px;
-    /* bottom: 10px; */
   }
-  #femail{
+
+  #femail {
     width: 200px;
     left: 210px;
     bottom: 50px;
   }
-  #fsubject{
+
+  #fsubject {
     position: relative;
     width: 410px;
     bottom: 70px;
   }
-  #fmessage{
+
+  #fmessage {
     position: relative;
     width: 410px;
     bottom: 80px;
     height: 100px;
   }
-  .mg{
-    left: 0px;
+
+  .mg {
+    left: 0;
   }
 }
