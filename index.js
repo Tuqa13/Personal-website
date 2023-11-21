@@ -29,6 +29,8 @@ document.addEventListener('DOMContentLoaded', function () {
   const messageInput = document.getElementById('fmessage');
 
   form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
     let isValid = true;
 
     if (nameInput.value.trim() === '') {
@@ -47,14 +49,74 @@ document.addEventListener('DOMContentLoaded', function () {
       alert('Please enter a subject.');
     }
 
-    // Validate Message
     if (messageInput.value.trim() === '') {
       isValid = false;
       alert('Please enter a message.');
     }
 
-    if (!isValid) {
-      e.preventDefault();
+    if (isValid) {
+      alert('Form submitted successfully!');
     }
   });
+
+  document.querySelectorAll('.fab').forEach(icon => {
+    icon.addEventListener('mouseover', function () {
+      alert(`You hovered over ${this.classList[1]} icon.`);
+    });
+  });
+
+  window.addEventListener('scroll', function () {
+    const body = document.body;
+    const scrollPosition = window.scrollY;
+
+    if (scrollPosition > 200) {
+      body.style.backgroundColor = '#333333';
+    } else {
+      body.style.backgroundColor = '#222222';
+    }
+  });
+
+  alert('Welcome to TuqaAburaddaha\'s website!');
+
+  const btn = document.querySelector('.btn');
+  btn.addEventListener('click', function () {
+    this.innerText = 'Thanks for clicking!';
+  });
+
+  const loadContentBtn = document.getElementById('load-content');
+  const contentContainer = document.getElementById('dynamic-content');
+
+  loadContentBtn.addEventListener('click', function () {
+    const newContent = document.createElement('p');
+    newContent.textContent = 'Dynamically loaded content!';
+    contentContainer.appendChild(newContent);
+  });
+
+  document.addEventListener('mousemove', function (event) {
+    const mouseX = event.clientX;
+    const mouseY = event.clientY;
+    console.log(`Mouse position - X: ${mouseX}, Y: ${mouseY}`);
+  });
+
+  const toggleElement = document.getElementById('toggle-me');
+  toggleElement.addEventListener('dblclick', function () {
+    this.classList.toggle('highlight');
+  });
+
+  const audioElement = new Audio('path-to-your-audio-file.mp3');
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Enter') {
+      audioElement.play();
+    }
+  });
+
+  const changeColorBtn = document.getElementById('change-color');
+  changeColorBtn.addEventListener('click', function () {
+    const randomColor = `rgb(${Math.random() * 255}, ${Math.random() * 255}, ${Math.random() * 255})`;
+    document.body.style.color = randomColor;
+  });
+
+  window.myFunction = function () {
+    navigation.classList.toggle('show');
+  };
 });
